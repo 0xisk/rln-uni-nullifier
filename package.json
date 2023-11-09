@@ -1,0 +1,25 @@
+{
+  "name": "rln-uni-nullifier",
+  "version": "1.0.0",
+  "description": "Testing RLN with 1 User Message Limit",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc --project tsconfig.json && node dist/src/index.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/keccak256": "^5.7.0",
+    "@ethersproject/strings": "^5.7.0",
+    "@zk-kit/incremental-merkle-tree": "^1.1.0",
+    "ffjavascript": "^0.2.62",
+    "poseidon-lite": "^0.2.0",
+    "rlnjs": "^3.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,64 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "rootDir": ".",
+        "outDir": "dist",
+        "paths": {
+            "@src/*": [
+                "src/*"
+            ],
+            "ffjavascript": [
+                "types/ffjavascript"
+            ],
+            "snarkjs": [
+                "types/snarkjs"
+            ],
+        },
+        "target": "ES2020",
+        "lib": [
+            "dom",
+            "es2020"
+        ],
+        "typeRoots": [
+            "node_modules/@types",
+            "src/types",
+        ],
+        "experimentalDecorators": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "strictPropertyInitialization": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
+        "composite": true,
+        "incremental": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "stripInternal": true,
+        "allowJs": true,
+        "declarationDir": "./dist/types",
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "noEmit": false
+        },
+        "esm": true,
+        "swc": true
+    },
+    "include": [
+        "src",
+        "types",
+        "zkeyFiles"
+    ],
+    "exclude": [
+        "./node_modules",
+        "dist"
+    ]
+}
